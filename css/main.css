@@ -1,138 +1,138 @@
-        /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-        /*
+    /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+    /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-        /* ==========================================================================
+    /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-        
-        html {
-            color: #222;
-            font-size: 1em;
-            line-height: 1.4;
-        }
-        /*
+    
+    html {
+        color: #222;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-        
-         ::-moz-selection {
-            background: #b3d4fc;
-            text-shadow: none;
-        }
-        
-         ::selection {
-            background: #b3d4fc;
-            text-shadow: none;
-        }
-        /*
+    
+     ::-moz-selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+    
+     ::selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+    /*
  * A better looking default horizontal rule
  */
-        
-        hr {
-            display: block;
-            height: 1px;
-            border: 0;
-            border-top: 1px solid #ccc;
-            margin: 1em 0;
-            padding: 0;
-        }
-        /*
+    
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+    /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-        
-        audio,
-        canvas,
-        iframe,
-        img,
-        svg,
-        video {
-            vertical-align: middle;
-        }
-        /*
+    
+    audio,
+    canvas,
+    iframe,
+    img,
+    svg,
+    video {
+        vertical-align: middle;
+    }
+    /*
  * Remove default fieldset styles.
  */
-        
-        fieldset {
-            border: 0;
-            margin: 0;
-            padding: 0;
-        }
-        /*
+    
+    fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    /*
  * Allow only vertical resizing of textareas.
  */
-        
-        textarea {
-            resize: vertical;
-        }
-        /* ==========================================================================
+    
+    textarea {
+        resize: vertical;
+    }
+    /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-        
-        .browserupgrade {
-            margin: 0.2em 0;
-            background: #ccc;
-            color: #000;
-            padding: 0.2em 0;
-        }
-        /* ==========================================================================
+    
+    .browserupgrade {
+        margin: 0.2em 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+    }
+    /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-        /* ==========================================================================
+    /* ==========================================================================
    Helper classes
    ========================================================================== */
-        /*
+    /*
  * Hide visually and from screen readers
  */
-        
-        .hidden {
-            display: none !important;
-        }
-        /*
+    
+    .hidden {
+        display: none !important;
+    }
+    /*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-        
-        .visuallyhidden {
-            border: 0;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-        }
-        /*
+    
+    .visuallyhidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-        
-        .visuallyhidden.focusable:active,
-        .visuallyhidden.focusable:focus {
-            clip: auto;
-            height: auto;
-            margin: 0;
-            overflow: visible;
-            position: static;
-            width: auto;
-        }
-        /*
+    
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+    /*
  * Hide visually and from screen readers, but maintain layout
  */
-        
-        .invisible {
-            visibility: hidden;
-        }
-        /*
+    
+    .invisible {
+        visibility: hidden;
+    }
+    /*
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -143,175 +143,285 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-        
-        .clearfix:before,
-        .clearfix:after {
-            content: " ";
-            /* 1 */
-            display: table;
-            /* 2 */
-        }
-        
-        .clearfix:after {
-            clear: both;
-        }
-        /* ==========================================================================
+    
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        /* 1 */
+        display: table;
+        /* 2 */
+    }
+    
+    .clearfix:after {
+        clear: both;
+    }
+    /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-        
-        @media only screen and (min-width: 35em) {
-            /* Style adjustments for viewports that meet the condition */
-        }
-        
-        @media print,
-        (-webkit-min-device-pixel-ratio: 1.25),
-        (min-resolution: 1.25dppx),
-        (min-resolution: 120dpi) {
-            /* Style adjustments for high resolution devices */
-        }
-        /* ==========================================================================
+    
+    @media only screen and (min-width: 35em) {
+        /* Style adjustments for viewports that meet the condition */
+    }
+    
+    @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+        /* Style adjustments for high resolution devices */
+    }
+    /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-        
-        @media print {
-            *,
-            *:before,
-            *:after,
-            *:first-letter,
-            *:first-line {
-                background: transparent !important;
-                color: #000 !important;
-                /* Black prints faster:
+    
+    @media print {
+        *,
+        *:before,
+        *:after,
+        *:first-letter,
+        *:first-line {
+            background: transparent !important;
+            color: #000 !important;
+            /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-                box-shadow: none !important;
-                text-shadow: none !important;
-            }
-            a,
-            a:visited {
-                text-decoration: underline;
-            }
-            a[href]:after {
-                content: " (" attr(href) ")";
-            }
-            abbr[title]:after {
-                content: " (" attr(title) ")";
-            }
-            /*
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+        abbr[title]:after {
+            content: " (" attr(title) ")";
+        }
+        /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-            a[href^="#"]:after,
-            a[href^="javascript:"]:after {
-                content: "";
-            }
-            pre,
-            blockquote {
-                border: 1px solid #999;
-                page-break-inside: avoid;
-            }
-            /*
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
+        /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-            thead {
-                display: table-header-group;
-            }
-            tr,
-            img {
-                page-break-inside: avoid;
-            }
-            img {
-                max-width: 100% !important;
-            }
-            p,
-            h2,
-            h3 {
-                orphans: 3;
-                widows: 3;
-            }
-            h2,
-            h3 {
-                page-break-after: avoid;
-            }
+        thead {
+            display: table-header-group;
         }
-        /*CSS CUSTOM
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
+        img {
+            max-width: 100% !important;
+        }
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
+    }
+    /*CSS CUSTOM
 ==============================================================================================================*/
-        
-        .header,
-        .header .container {
-            background-color: #F56B2A;
-            color: white;
-            height: 60px;
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header,
+    .header .container {
+        background-color: #F56B2A;
+        color: white;
+        height: 60px;
+    }
+    
+    .divMenu .menuD {
+        background-color: #f56b2a;
+    }
+    
+    .divMenu .menu li a {
+        color: red;
+    }
+    
+    .divMenu li a:hover,
+    .divMenu li:hover {
+        background-color: white;
+        color: #f56b2a;
+        text-decoration: none;
+    }
+    
+    .menu {
+        background-color: white;
+        border: 0;
+        border-radius: 5px;
+        color: #f56b2a;
+        height: 40px;
+        width: 70px;
+    }
+    
+    .menu:hover {
+        background-color: whitesmoke;
+    }
+    
+    .header .container div ul li a,
+    .header a {
+        color: white;
+    }
+    
+    .header .container ul li {
+        margin-top: 5px;
+    }
+    
+    .Pconnexion {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        height: 59px;
+        padding: 0;
+    }
+    
+    .Pconnexion:hover,
+    .connexion:hover {
+        background-color: white;
+        color: #f56b2a;
+    }
+    
+    .Pconnexion li .connexion:hover {
+        background-color: white;
+        color: #f56b2a;
+        text-decoration: none;
+    }
+    
+    .menuD li a:hover {
+        background-color: #f56b2a;
+        color: white;
+        text-decoration: underline
+    }
+    
+    .header img {
+        height: 25px;
+        width: 130px;
+    }
+    /*STYLE POUR LE MAIN
+=========================================================*/
+    
+    main {
+        margin-top: 15px;
+    }
+    
+    main p,
+    main ul li a {
+        color: #1d4851;
+    }
+    
+    main button {
+        margin: 15px 0;
+    }
+    
+    main span {
+        color: #f56b2a;
+    }
+    
+    main img {
+        width: 450px;
+    }
+    
+    main .dropdown {
+        background-color: white;
+        width: 100%;
+    }
+    
+    main ul {
+        list-style-type: none;
+        text-align: right;
+    }
+    
+    main ul li a:hover {
+        color: #f56b2a;
+    }
+    
+    .mainEnd {
+        text-align: center;
+    }
+    /*STYLE FOOTER
+=========================================================*/
+    
+    footer {
+        display: none;
+    }
+    
+    @media (min-width:992px) {
+        footer {
+            display: block
         }
-        
-        .divMenu .menuD {
-            background-color: #f56b2a;
+        .footer h2,
+        .footerGrey h2 {
+            border-bottom: 1px solid #d1d1d1;
+            font-size: 13px;
         }
-        
-        .divMenu .menu li a {
-            color: red;
-        }
-        
-        .divMenu li a:hover,
-        .divMenu li:hover {
-            background-color: white;
-            color: #f56b2a;
-            text-decoration: none;
-        }
-        .menu {
-            background-color: white;
-            border: 0;
-            border-radius: 5px;
-            color: #f56b2a;
-            height: 40px;
-            width: 70px;
-        }
-        
-        .menu:hover {
+        .footer {
+            text-align: left;
             background-color: whitesmoke;
         }
-        
-        .header .container div ul li a,
-        .header a {
-            color: white;
-        }
-        
-        .header .container ul li {
-            margin-top: 5px;
-        }
-        
-        .Pconnexion {
-            border-left: 1px solid white;
-            border-right: 1px solid white;
-            height: 59px;
+        .footer ul {
+            list-style-type: none;
             padding: 0;
         }
-        
-        .Pconnexion:hover,
-        .connexion:hover {
-            background-color: white;
-            color: #f56b2a;
+        .footer ul li a,
+        .footer h2 {
+            color: #1d4851;
         }
-        
-        .Pconnexion li .connexion:hover {
-            background-color: white;
-            color: #f56b2a;
-            text-decoration: none;
+        .footer ul li a:hover {
+            text-decoration: underline;
         }
-        
-        .menuD li a:hover {
-            background-color: #f56b2a;
+        .footerGrey {
+            background-color: #474747;
             color: white;
-            text-decoration: underline
+            height: 300px;
+            text-align: left;
         }
-        
-        .header img {
-            height: 25px;
-            width: 130px;
+        .footerGrey ul {
+            list-style-type: none;
+            padding: 0;
         }
-        
-        @media (min-width: 992px) {}
+        .footerGrey ul li {
+            margin: 20px 0;
+        }
+        .footerGrey ul li a {
+            color: white;
+        }
+        .footerGrey ul li a:hover {
+            text-decoration: underline;
+        }
+        .footerGrey button {
+            background-color: white;
+            color: black;
+            text-align: left;
+            width: 100%;
+        }
+        .footerGrey .dropdown-menu li a {
+            color: black;
+        }
+        .footerGrey img {
+            width: 115px;
+            height: 30px;
+            margin-right: 5px;
+        }
+    }
